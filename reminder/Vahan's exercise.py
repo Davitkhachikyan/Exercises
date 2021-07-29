@@ -47,10 +47,8 @@ def input_counter():
         if key in word:
             value_list.append(value)
     value_list.sort()
-    min_letter = value_list[0]
-    while min_letter != 0:
-        input_count += 1
-        min_letter -= 1
+    input_count = value_list[0]
     return input_count
+
 
 print(input_counter())
